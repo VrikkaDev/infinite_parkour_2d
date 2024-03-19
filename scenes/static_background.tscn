@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7jbyimsfsqb4"]
+
+[ext_resource type="Texture2D" uid="uid://cafh1t0d1kjed" path="res://textures/bg.png" id="1_8f6a6"]
+[ext_resource type="Texture2D" uid="uid://cepes4cfajrwn" path="res://textures/bg-4.png" id="1_oaqa3"]
+[ext_resource type="Texture2D" uid="uid://cbf08103ctj5h" path="res://textures/bg-3.png" id="2_hoxkp"]
+[ext_resource type="Texture2D" uid="uid://vjgvordo1l3c" path="res://textures/bg-2.png" id="3_a118a"]
+[ext_resource type="Texture2D" uid="uid://dsckqqh00ihj1" path="res://textures/bg-1.png" id="4_x2ylu"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1sxpy"]
+
+[node name="StaticBG" type="CanvasLayer"]
+layer = -1
+
+[node name="Sprite" type="Sprite2D" parent="."]
+z_index = -2
+texture_repeat = 2
+position = Vector2(473, 183)
+texture = ExtResource("1_8f6a6")
+region_enabled = true
+region_rect = Rect2(0, 0, 2147.61, 535.449)
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(946, 368)
+texture = ExtResource("1_oaqa3")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(946, 368)
+texture = ExtResource("2_hoxkp")
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+position = Vector2(946, 368)
+texture = ExtResource("3_a118a")
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+material = SubResource("CanvasItemMaterial_1sxpy")
+position = Vector2(559, 1138)
+scale = Vector2(1.275, 1.275)
+texture = ExtResource("4_x2ylu")
+region_enabled = true
+region_rect = Rect2(0, 0, 960, 1561)

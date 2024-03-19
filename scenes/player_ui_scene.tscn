@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://kafedwwldbio"]
+
+[ext_resource type="Texture2D" uid="uid://bg4ym535vl3gd" path="res://textures/health_bar.png" id="1_ne3m3"]
+
+[node name="Hud" type="CanvasLayer"]
+
+[node name="HealthBar" type="Sprite2D" parent="."]
+position = Vector2(1060, 35)
+texture = ExtResource("1_ne3m3")
+hframes = 5
+frame = 4

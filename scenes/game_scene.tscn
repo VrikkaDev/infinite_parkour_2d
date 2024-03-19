@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bw0hiu1qoql7h"]
+
+[ext_resource type="Script" path="res://scripts/game_scene.gd" id="1_43bpp"]
+[ext_resource type="PackedScene" uid="uid://b7jbyimsfsqb4" path="res://scenes/static_background.tscn" id="3_gpa8p"]
+[ext_resource type="PackedScene" uid="uid://4sfuk2kynocj" path="res://scenes/parkour_tile_scene.tscn" id="3_pdnpv"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_43bpp")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://scenes/player_scene.tscn")
+spawn_path = NodePath("..")
+
+[node name="ParkourTileScene" parent="." instance=ExtResource("3_pdnpv")]
+
+[node name="StaticBG" parent="." instance=ExtResource("3_gpa8p")]
